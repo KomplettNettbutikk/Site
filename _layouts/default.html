@@ -28,6 +28,16 @@
               <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
             </section>
           {% endif %}
+
+
+
+<ul>
+   {% for item in site.data.navigation.links %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
+
+
         </header>
     </div>
 
